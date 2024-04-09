@@ -85,7 +85,7 @@ python Train_fine.py
 ```
 
 ## Testing
-In ***checkpoint***, we provide a pretrained model "kitti.pth" to reproduce the reported results on the KITTI Odometry dataset. Please run:
+In ***checkpoint***, we provide a pretrained model _"kitti.pth"_ to reproduce the reported results on the KITTI Odometry dataset. Please run:
 ```shell script
 python Test.py
 ```
