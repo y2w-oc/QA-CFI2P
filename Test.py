@@ -47,7 +47,8 @@ if __name__=='__main__':
     model = FineI2P(config, load_coarse_model=False)
     model = model.cuda()
 
-    sate_dict = torch.load("checkpoint/fine.pth")
+    # "kitti.pth" is a pretrained model on KITTI Odometry. You can modify this to use other models.
+    sate_dict = torch.load("checkpoint/kitti.pth")
     model.load_state_dict(sate_dict)
     model.eval()
 
